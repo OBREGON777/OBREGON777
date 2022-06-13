@@ -1,0 +1,96 @@
+﻿<html>
+<head>
+   <title>IMAGENES</TITLE>
+   </head>
+   <h1><marquee bgcolor="#B20CDE">HOLA MUNDO DEL MAÑANA..... :) </marquee></h1>
+   <body bgcolor="#0CDEAB">
+   <font size=5 color="black">
+      <ol>
+<MARQUEE BEHAVIOR="ALTERNATE">
+<IMG SRC="img02.gif"WIDTH="60%">
+</MARQUEE>
+      <script>
+      var isIE=document.all?true:false;
+      var isNS4=document.layers?true:false;
+      var isNS6=!isIE&&document.getElementById?true:false;
+      function openIt() {
+        var _page = "http://www.js-examples.com/";
+        var _name = "Messages";
+        var _parms = "status=yes,top=100,left=200,width=250,height=1";
+        window.open(_page,_name,_parms)
+      }
+      </script>
+      
+      </head>
+      </b>
+      <body>
+   </p>
+   
+   <div id="StartMenu">
+   <font size="3">El año 2016 fue el más cálido registrado. Si la temperatura promedio del planeta aumenta 1.5ºC, varios países insulares desaparecerán. Al año llegan cerca de 8 millones de toneladas de plástico al mar. El aumento de temperatura del océano ha blanqueado cerca de dos terceras partes de la Gran Barrera de coral.</font>
+   </div>
+   
+   <script name="startmenu"> 
+   onclick="openIt()";
+   var h = "hidden"; 
+   var v = "visible"; 
+   
+   function showMenu(_v)
+   {
+     if(isIE)
+       window.document.all.StartMenu.style.visibility = _v?v:h;
+     if(isNS6)
+       document.getElementById("StartMenu").style.visibility=_v?v:h;
+     if(isNS4)
+     {
+       alert("This script will not run for NS4 because this DIV is positioned relatively and not absolutely!");
+     }
+   }
+   </script> 
+   <a href="javascript:showMenu(true)"><font size="3">Mostrar texto</font></a><font size="3"><BR>
+   <a href="javascript:showMenu(false)">Esconder texto</a></font><BR>
+<center>
+<IMG SRC="img01.gif"WIDTH="60%"><br>
+</center>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+.oculto { display: none; }
+.visible { display: inline; }
+</style>
+<script type="text/javascript">
+function muestra() {
+  var elemento = document.getElementById("adicional");
+  elemento.className = "visible";
+  var enlace = document.getElementById("enlace");
+  enlace.className = "oculto";
+}
+</script>
+<body>
+<id="texto"><font size="4">La Tierra es el tercer planeta si contamos desde el Sol y es el más grande de los cuatro planetas terrestres, es decir, Mercurio, Venus, la Tierra y Marte. Estos planetas también son los más cercanos al sol. <span id="adicional" class="oculto"> La Tierra también es el único lugar en el sistema solar donde el agua puede estar presente en los tres estados: sólido, líquido y gaseoso.</font></span>
+<br><a id="enlace" href="#" onclick="muestra(); return false;"><font size="4">Seguir leyendo</font></a>
+</body>
+<CENTER>
+<IMG SRC="img04.jpg"WIDTH="60%"><BR>
+</CENTER>
+<script type="text/javascript">
+function muestraOculta(id) {
+  var elemento = document.getElementById('contenidos_'+id);
+  var enlace = document.getElementById('enlace_'+id);
+
+  if(elemento.style.display == "" || elemento.style.display == "block") {
+    elemento.style.display = "none";
+    enlace.innerHTML = 'Mostrar contenidos';
+  }
+  else {
+    elemento.style.display = "block";
+    enlace.innerHTML = 'Ocultar contenidos';
+  }
+}
+</script>
+<body>
+<id="contenidos_1"><font size="4"> Los científicos han calculado recientemente que hay más de 1500 minerales que aún no se han descubierto en la Tierra. Somos conscientes de más de 5000 minerales, pero muchos aún son desconocidos. Otro dato curioso a destacar es que la diversidad mineral de la Tierra es única en sí misma y no está duplicada en ningún otro planeta, ni siquiera en los exoplanetas rocosos.</font>
+<br><a id="enlace_1" href="#" onclick="muestraOculta('1'); return false;"><font size="4">Ocultar contenidos</font></a>
+<CENTER>
+<br><a href="CURIOSIDADES.HTML" target="_blank">CURIOSIDADES
+</body>
+</html>
