@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+<title> Ecología Comunitaria </title>
+</head>
+<style>
+    body {
+      background-image:url('z.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+<BODY style="font-family: Verdana; font-size:10pt">
+<style>
+.Item {
+   cursor: hand;
+   font-family: verdana; 
+   font-size: 30;
+   font-style: normal;
+   background-color: blue;
+   color: white
+ }
+.Highlight {
+   cursor: hand; 
+   font-family: verdana;
+   font-size: 30;
+   font-style: italic;
+   background-color: white;
+   color: blue
+ }
+</style>
+<div id=Rollover>
+<p align="center">
+<span class=Item>Ecología</span> </font><span class=Item>Comunitaria</span>
+</font><span class="Item"></span><font face=arial size="1">
+</div>
+<script>
+function rollon() {
+  if (window.event.srcElement.className == "Item") {
+     window.event.srcElement.className = "Highlight";
+  }
+} 
+  
+Rollover.onmouseover = rollon;
+  
+function rolloff() {
+  if (window.event.srcElement.className == "Highlight") {
+     window.event.srcElement.className = "Item";
+  }
+} 
+  
+Rollover.onmouseout = rolloff;
+</script><center>
+<video src="ECO.COM.mp4" poster="presentacion.jpg" controls></video><br><br>
+    <font size="5"><A HREF= "ECO TIP.HTML">VOLVER</A></font>
+</body>
+</html>
